@@ -1,44 +1,226 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-</head>
-<body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../app/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <div ng-view></div>
+    <!-- Custom styles for this template -->
+    <link href="app.css" rel="stylesheet">
 
-  <div>Jason's Big, Bad, and Ugly Angular seed app: v<span app-version></span></div>
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
-</body>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            
+        <a class="navbar-brand" href="#">Archidera</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#hiring">We're Hiring</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- ==== HEADERWRAP ==== -->
+    <div id="headerwrap">
+        <header class="clearfix"> 
+          <div class="img-responsive"><img src="assets/img/archidera_logo_white.png" alt=""></div>
+          <p>API and Web Services</p>
+          <p>Don't wait until the end. Without integration, you have nothing!</p>    
+      </header>
+    </div><!-- /headerwrap -->
+        
+        
+    <!-- ==== GREYWRAP ==== -->
+    <div id="greywrap">
+        <div class="row">
+            <div class="col-lg-4" callout>
+                <i class="fa fa-refresh fa-4x"></i>
+                <h2>Our Agility</h2>
+                <p>Let's get the stories on paper and go from there. It's not expected that you understand all requirements before we start. Our model is to develop, test, rinse, repeat...</p>
+            </div><!-- col-lg-4 -->
+
+            <div class="col-lg-4 callout">
+                <i class="fa fa-group fa-4x"></i>
+                <h2>Our Expertise</h2>
+                <p>We know choices can be difficult. Partner with us to determine what technologies, whether open source or proprietary, best meet your needs.</p>
+            </div><!-- col-lg-4 -->
+
+            <div class="col-lg-4 callout">
+                <i class="fa fa-cloud-upload fa-4x"></i>
+                <h2>Our Promise</h2>
+                <p>Until the final delivery our team will work to ensure that your solution is performing as expected, no matter how many iterations it takes.</p>
+            </div><!-- col-lg-4 -->
+        </div><!-- row -->
+    </div><!-- greywrap -->
+
+        
+    <!-- ==== ABOUT ==== -->
+    <div class="container" id="about" name="about">
+        <div class="row white">
+        <br>
+            <h1 class="centered">A LITTLE ABOUT US</h1>
+            <hr>
+
+            <div class="col-lg-6">
+                <p>Too many software projects end with less than desired results. Overbudget, doesn't work as expected, missed schedules...sound familiar?  We founded Archidera because we believe that our industry can do better. Our mission is to make a positive difference in the growth potential of our customers by working side-by-side with them to successfully deliver business value with every project.</p>
+            </div><!-- col-lg-6 -->
+
+            <div class="col-lg-6">
+                <p>The consultants at Archidera have a broad range of industry experience, helping to deliver solutions for today’s internet. Our IT services will take you from design, through development, and if you need us to stick around, maintenance.  We understand technology, how to implement to success, and are dedicated to ensuring that the solutions deliver business value.</p>
+            </div><!-- col-lg-6 -->
+        </div><!-- row -->
+    </div><!-- container -->
+
+      
+    <!-- ==== SECTION DIVIDER1 -->
+    <section class="section-divider textdivider divider1">
+        <div class="container">
+            <h1>FASTER, CHEAPER, SMARTER</h1>
+            <hr>
+            <p>Enough of the bigbox integration solutions. You pay for 100% of the product and use 25% of the functionality.</p>
+        </div><!-- container -->
+    </section><!-- section -->
+
+
+    <!-- ==== SERVICES ==== -->
+    <div class="container" id="services" name="services">
+        <br>
+        <br>
+        <div class="row">
+            <h2 class="centered">INTEGRATE FOR TOMORROW</h2>
+            <hr>
+            <br>
+            <div class="col-lg-offset-2 col-lg-8">
+                <p>The industry is changing and it's happening quickly, don't fall behind the curve. The current recipe for success is lean-thinking, agile methods, and lightweight open-source components all running in the cloud. If this makes your head spin, that's ok. We are here to unwind the confusion and help your organization transform.</p>
+                <p>As more solutions are pushed to the cloud, integration becomes even more important. While your organization is saving on CAPEX, the processes are stretched from your organization's office to many "endpoints", that being the host of cloud providers and services you are utilizing.</p>
+                <p>Archidera will help you get in front of the curve by focusing on integration. What type of architecture does your organization have? Do you even have one? Ever heard of event-driven? Do you need web services? We can provide the skills and experience to ensure that the integration of you processes and data are not left behind.</p>
+            </div><!-- col-lg -->
+        </div><!-- row -->
+
+        <div class="row">
+                <h2 class="centered">WHAT WE DO</h2>
+                <hr>
+                <br>
+            
+                <div class="col-lg-4 centered" callout>
+                    <i class="fa fa-road fa-4x"></i>
+                    <h2>Integration Strategy</h2>
+                    <p>We will work with your organization to understand the goals and where the enterprise is, from a current and target state, to create an integration strategy with roadmap with actionable next steps.</p>
+                </div><!-- col-lg-4 -->
+
+                <div class="col-lg-4 centered" callout>
+                    <i class="fa fa-code fa-4x"></i>
+                    <h2>Develop and Implement</h2>
+                    <p>Archidera will either build from scratch or use a software component that makes the most sense with an eye to where the enterprise is heading.</p>
+                </div><!-- col-lg-4 -->
+
+                <div class="col-lg-4 centered" callout>
+                    <i class="fa fa-gears fa-4x"></i>
+                    <h2>Maintenance</h2>
+                    <p>Once the integration solution has been implemented, we will stick around to care and feed the most important layer in your organization.</p>
+                </div><!-- col-lg-4 -->
+        </div><!-- row -->
+    </div><!-- container -->      
+
+        
+    <!-- ==== SECTION DIVIDER2 -->
+    <section class="section-divider textdivider divider2">
+        <div class="container">
+            <h1>JOIN THE TEAM</h1>
+            <hr>
+            <p>Archidera is always looking for help, don't be shy.</p>
+        </div><!-- container -->
+    </section><!-- section -->
+
+
+    <!-- ==== GREYWRAP ==== -->
+    <div id="greywrap">
+        <div class="container" id="hiring">
+            <div class="row">
+                <div class="col-lg-8 centered">
+                    <img class="img-responsive" src="assets/img/tech_collage.png" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <h2>We Are Hiring!</h2>
+                    <p>Do any of these technologies interest you? Are you the type of developer that wants to solve a client's problem with the newer software stacks rather than become a "configuration drone" of the big box suites? </p>
+                    <p><a href="mailto:info@archidera.com" class="btn btn-success">Contact Us</a></p>
+                </div>
+            </div><!-- row -->
+        </div>
+        <br>
+        <br>
+    </div><!-- greywrap -->
+
+
+    <!-- ==== SECTION DIVIDER6 ==== -->
+    <section class="section-divider textdivider divider6">
+        <div class="container">
+            <h1>MADE IN THE USA.</h1>
+            <hr>
+            <p>Washington, DC</p>
+            <p>703-677-6054</p>
+            <p>info@archidera.com</p>
+            <p><a class="fa fa-linkedin" href="https://www.linkedin.com/company/archidera-llc"></a></p>
+        </div><!-- container -->
+    </section><!-- section -->
+
+    <div class="container" id="contact" name="contact">
+        <div class="row">
+        <br>
+            <h1 class="centered">THANKS FOR VISITING US</h1>
+            <hr>
+            <br>
+        </div><!-- row -->
+
+    </div><!-- container -->
+
+    <div id="footerwrap">
+        <div class="container">
+            <h4>2016 Archidera, LLC - All rights reserved.</h4>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
