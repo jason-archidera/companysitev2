@@ -1,0 +1,1 @@
+aws s3 cp . s3://archidera.com --recursive --exclude=".git/*" --exclude=".gitignore" --exclude="*.sh"
